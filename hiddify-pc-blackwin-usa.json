@@ -1,0 +1,3215 @@
+{
+  "outbounds": [
+    {
+      "type": "socks",
+      "tag": "🖥️ПК🖥️📱",
+      "server": "192.168.0.107",
+      "server_port": 9050,
+      "version": "5"
+    },
+    {
+      "type": "vless",
+      "tag": "[3] 🔹🇺🇸 США🔹 § 0",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "159.203.144.233",
+      "server_port": 8443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.indevs.in",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=",
+        "headers": {
+          "Host": "sni.111000.indevs.in"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[5] 🔹🇺🇸 США🔹 § 1",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "82.38.63.246",
+      "server_port": 8443,
+      "uuid": "89f8f53c-2ec5-11f1-bffe-46c4782ac1a7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc",
+          "short_id": "cafe01234567"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[8] 🔹🇺🇸 США🔹 § 2",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "38.47.116.97",
+      "server_port": 60004,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.dns.army",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?https://t.me/WangCai2🇨🇳",
+        "headers": {
+          "Host": "sni.111000.dns.army"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[22] 🔹🇺🇸 США🔹 § 3",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "147.182.212.232",
+      "server_port": 56565,
+      "uuid": "7b188eea-b08f-42c2-bac7-d3b0e74218b8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.paypal.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Td03Ae-cuYLq4xg7MSps58c_yRUcbbwtZLXm0ywabjY"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[37] 🔹🇺🇸 США🔹 § 4",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "154.36.130.199",
+      "server_port": 45755,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.dns.army",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=",
+        "headers": {
+          "Host": "sni.111000.dns.army"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[42] 🔹🇺🇸 США🔹 § 5",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "166.1.89.21",
+      "server_port": 443,
+      "uuid": "e69d5f8a-2629-45ac-889b-981983209933",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PxiVEKI3dp1UpqzpgnD31-Wl4MFiHjTI23ylGFn5Slg",
+          "short_id": "111111"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[43] 🔹🇺🇸 США🔹 § 6",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "154.17.4.159",
+      "server_port": 2053,
+      "uuid": "06b65903-406d-4a41-8463-6fd5c0ee7798",
+      "tls": {
+        "enabled": true,
+        "server_name": "sn1.skylee5.cloudns.ch",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/proxyip=proxyip.cmliussss.net",
+        "headers": {
+          "Host": "sn1.skylee5.cloudns.ch"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[45] 🔹🇺🇸 США🔹 § 7",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "129.153.127.204",
+      "server_port": 20756,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.indevs.in",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "sni.111000.indevs.in"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[49] 🔹🇺🇸 США🔹 § 8",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "3.231.84.35",
+      "server_port": 443,
+      "uuid": "ce069292-c8bf-40dd-a6b1-87818a1e64e9",
+      "tls": {
+        "enabled": true,
+        "server_name": "1-bhn.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "1-bhn.pages.dev"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[52] 🔹🇺🇸 США🔹 § 9",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "34.199.89.235",
+      "server_port": 443,
+      "uuid": "ce069292-c8bf-40dd-a6b1-87818a1e64e9",
+      "tls": {
+        "enabled": true,
+        "server_name": "177-e06.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "177-e06.pages.dev"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[58] 🔹🇺🇸 США🔹 § 10",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "129.158.198.241",
+      "server_port": 8443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.indevs.in",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=",
+        "headers": {
+          "Host": "sni.111000.indevs.in"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[59] 🔹🇺🇸 США🔹 § 11",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "107.174.36.103",
+      "server_port": 443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.v6.navy",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=",
+        "headers": {
+          "Host": "sni.111000.v6.navy"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[68] 🔹🇺🇸 США🔹 § 12",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "15.204.97.216",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[78] 🔹🇺🇸 США🔹 § 13",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "104.248.68.179",
+      "server_port": 2083,
+      "uuid": "981fca81-5be1-41f8-ac9b-d138e8109943",
+      "tls": {
+        "enabled": true,
+        "server_name": "babayaga-6i7.pages.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=",
+        "headers": {
+          "Host": "babayaga-6i7.pages.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[79] 🔹🇺🇸 США🔹 § 14",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "45.156.24.61",
+      "server_port": 2053,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.v6.navy",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=",
+        "headers": {
+          "Host": "sni.111000.v6.navy"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[80] 🔹🇺🇸 США🔹 § 15",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "38.147.175.124",
+      "server_port": 23667,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.dns.army",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=",
+        "headers": {
+          "Host": "sni.111000.dns.army"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[82] 🔹🇺🇸 США🔹 § 16",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "172.86.73.221",
+      "server_port": 443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.indevs.in",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "sni.111000.indevs.in"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[87] 🔹🇺🇸 США🔹 § 17",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "162.120.94.138",
+      "server_port": 2096,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.indevs.in",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "sni.111000.indevs.in"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[88] 🔹🇺🇸 США🔹 § 18",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "15.204.97.214",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[90] 🔹🇺🇸 США🔹 § 19",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "192.193.104.25",
+      "server_port": 443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.indevs.in",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=",
+        "headers": {
+          "Host": "sni.111000.indevs.in"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[91] 🔹🇺🇸 США🔹 § 20",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "154.36.130.71",
+      "server_port": 18696,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.dns.army",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=",
+        "headers": {
+          "Host": "sni.111000.dns.army"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[92] 🔹🇺🇸 США🔹 § 21",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "38.55.146.153",
+      "server_port": 13000,
+      "uuid": "b852270a-1283-4ea8-8a2f-5bae8e644a3e",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[93] 🔹🇺🇸 США🔹 § 22",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "45.82.251.116",
+      "server_port": 8880,
+      "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
+      "transport": {
+        "type": "grpc",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[94] 🔹🇺🇸 США🔹 § 23",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "154.36.130.71",
+      "server_port": 16116,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.dns.army",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=",
+        "headers": {
+          "Host": "sni.111000.dns.army"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[96] 🔹🇺🇸 США🔹 § 24",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "45.90.12.239",
+      "server_port": 443,
+      "uuid": "ad546c31-82ec-4558-ac49-5ce28883b59f",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fviTlCtkzpbYhTpHObiVtlgCaAT8LytP9eWUoa6Jfy4",
+          "short_id": "8f2cdce880f9b4e8"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "xyz",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[98] 🔹🇺🇸 США🔹 § 25",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "165.227.11.101",
+      "server_port": 443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.indevs.in",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=",
+        "headers": {
+          "Host": "sni.111000.indevs.in"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[105] 🔹🇺🇸 США🔹 § 26",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "72.18.132.149",
+      "server_port": 2053,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.indevs.in",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=",
+        "headers": {
+          "Host": "sni.111000.indevs.in"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[108] 🔹🇺🇸 США🔹 § 27",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "18.208.88.193",
+      "server_port": 443,
+      "uuid": "ce069292-c8bf-40dd-a6b1-87818a1e64e9",
+      "tls": {
+        "enabled": true,
+        "server_name": "3-7gj.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "3-7gj.pages.dev"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[119] 🔹🇺🇸 США🔹 § 28",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "34.82.76.253",
+      "server_port": 443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.dynv6.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=",
+        "headers": {
+          "Host": "sni.111000.dynv6.net"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[122] 🔹🇺🇸 США🔹 § 29",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "15.204.97.206",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[125] 🔹🇺🇸 США🔹 § 30",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "154.21.95.34",
+      "server_port": 443,
+      "uuid": "981fca81-5be1-41f8-ac9b-d138e8109943",
+      "tls": {
+        "enabled": true,
+        "server_name": "babayaga-6i7.pages.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=",
+        "headers": {
+          "Host": "babayaga-6i7.pages.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[126] 🔹🇺🇸 США🔹 § 31",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "45.151.132.228",
+      "server_port": 19034,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.indevs.in",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=",
+        "headers": {
+          "Host": "sni.111000.indevs.in"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[127] 🔹🇺🇸 США🔹 § 32",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "172.174.11.248",
+      "server_port": 443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.v6.navy",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=",
+        "headers": {
+          "Host": "sni.111000.v6.navy"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[129] 🔹🇺🇸 США🔹 § 33",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "45.205.0.238",
+      "server_port": 2096,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.jpmj.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "sni.jpmj.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[131] 🔹🇺🇸 США🔹 § 34",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "205.172.56.16",
+      "server_port": 443,
+      "uuid": "7fbeb76f-2fa1-4a5a-9f99-4dbfaafb4da2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4v_4RSmE8ztHfQ4EV8Ym6J-6C8ACtYiznTHcdWJw6WA",
+          "short_id": "aabbccdd"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[132] 🔹🇺🇸 США🔹 § 35",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "150.136.254.79",
+      "server_port": 443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.indevs.in",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "sni.111000.indevs.in"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[134] 🔹🇺🇸 США🔹 § 36",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "132.226.85.167",
+      "server_port": 443,
+      "uuid": "e43dd231-7c75-4606-80ec-50fbb8335ce7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3ik9ws7ATJ5dKDY2Fofv9y7_vpFYsTqgOJRxiQKwA3A",
+          "short_id": "7b233a973c94ca0a"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[141] 🔹🇺🇸 США🔹 § 37",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "8.6.112.191",
+      "server_port": 443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.my111000.tech",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "sni.my111000.tech"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[147] 🔹🇺🇸 США🔹 § 38",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "184.169.181.217",
+      "server_port": 443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.indevs.in",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=",
+        "headers": {
+          "Host": "sni.111000.indevs.in"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[148] 🔹🇺🇸 США🔹 § 39",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "192.9.157.150",
+      "server_port": 57783,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.indevs.in",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "sni.111000.indevs.in"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[159] 🔹🇺🇸 США🔹 § 40",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "166.62.107.138",
+      "server_port": 2096,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.indevs.in",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "sni.111000.indevs.in"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[170] 🔹🇺🇸 США🔹 § 41",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "74.48.4.29",
+      "server_port": 37731,
+      "uuid": "8007e155-622e-4c9d-8a6e-67f49b4678f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "edt2-lgy.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "edt2-lgy.pages.dev"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[174] 🔹🇺🇸 США🔹 § 42",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "45.76.60.96",
+      "server_port": 443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.dynv6.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=",
+        "headers": {
+          "Host": "sni.111000.dynv6.net"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[176] 🔹🇺🇸 США🔹 § 43",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "15.204.97.219",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[181] 🔹🇺🇸 США🔹 § 44",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "74.48.145.83",
+      "server_port": 31556,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.indevs.in",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=",
+        "headers": {
+          "Host": "sni.111000.indevs.in"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[186] 🔹🇺🇸 США🔹 § 45",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "47.253.226.114",
+      "server_port": 443,
+      "uuid": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[194] 🔹🇺🇸 США🔹 § 46",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "185.186.245.40",
+      "server_port": 81,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.dynv6.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=",
+        "headers": {
+          "Host": "sni.111000.dynv6.net"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[196] 🔹🇺🇸 США🔹 § 47",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "154.36.130.71",
+      "server_port": 51528,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.dns.army",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=",
+        "headers": {
+          "Host": "sni.111000.dns.army"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[201] 🔹🇺🇸 США🔹 § 48",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "mouse5.1lil1.de",
+      "server_port": 443,
+      "uuid": "191ee2c8-e3e3-09a1-a4a5-c9e8323c6f3d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "stackoverflow.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "LaGTRJ1CJnnYV7FnyqQnU28I0xFTPFKI8xmUFwig5ic",
+          "short_id": "c410508e9721512b"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[209] 🔹🇺🇸 США🔹 § 49",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "yesok42v1.ip4exordir.shop",
+      "server_port": 8880,
+      "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
+      "transport": {
+        "type": "grpc",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[210] 🔹🇺🇸 США🔹 § 50",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "193.122.195.166",
+      "server_port": 52557,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.dns.army",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=",
+        "headers": {
+          "Host": "sni.111000.dns.army"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[212] 🔹🇺🇸 США🔹 § 51",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "174.138.48.29",
+      "server_port": 443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.v6.navy",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=",
+        "headers": {
+          "Host": "sni.111000.v6.navy"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[217] 🔹🇺🇸 США🔹 § 52",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "154.9.227.100",
+      "server_port": 443,
+      "uuid": "06b65903-406d-4a41-8463-6fd5c0ee7798",
+      "tls": {
+        "enabled": true,
+        "server_name": "sn1.skylee5.cloudns.ch",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/proxyip=proxyip.cmliussss.net",
+        "headers": {
+          "Host": "sn1.skylee5.cloudns.ch"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[223] 🔹🇺🇸 США🔹 § 53",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "167.88.160.144",
+      "server_port": 8443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.indevs.in",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "sni.111000.indevs.in"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[227] 🔹🇺🇸 США🔹 § 54",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "137.184.218.169",
+      "server_port": 36925,
+      "uuid": "c9fd0fb1-8251-4106-b09a-f4b426736f67",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[238] 🔹🇺🇸 США🔹 § 55",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "69.63.210.157",
+      "server_port": 443,
+      "uuid": "06b65903-406d-4a41-8463-6fd5c0ee7798",
+      "tls": {
+        "enabled": true,
+        "server_name": "sn1.skylee5.cloudns.ch",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/proxyip=proxyip.cmliussss.net",
+        "headers": {
+          "Host": "sn1.skylee5.cloudns.ch"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[244] 🔹🇺🇸 США🔹 § 56",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "54.243.197.249",
+      "server_port": 443,
+      "uuid": "ce069292-c8bf-40dd-a6b1-87818a1e64e9",
+      "tls": {
+        "enabled": true,
+        "server_name": "3-85q.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "3-85q.pages.dev"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[245] 🔹🇺🇸 США🔹 § 57",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "67.102.180.16",
+      "server_port": 443,
+      "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3j9h81MFAlsEOQ4K1ey1XD0tz1aEVNaMGMoMjQwif1w",
+          "short_id": "16"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[250] 🔹🇺🇸 США🔹 § 58",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "38.175.192.3",
+      "server_port": 30048,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.dns.army",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=",
+        "headers": {
+          "Host": "sni.111000.dns.army"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[253] 🔹🇺🇸 США🔹 § 59",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "166.62.105.238",
+      "server_port": 2096,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.jpmj.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "sni.jpmj.dev"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[255] 🔹🇺🇸 США🔹 § 60",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "129.153.77.88",
+      "server_port": 35250,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.indevs.in",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=",
+        "headers": {
+          "Host": "sni.111000.indevs.in"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[256] 🔹🇺🇸 США🔹 § 61",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "45.77.121.176",
+      "server_port": 443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.dynv6.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=",
+        "headers": {
+          "Host": "sni.111000.dynv6.net"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[260] 🔹🇺🇸 США🔹 § 62",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "129.146.6.2",
+      "server_port": 929,
+      "uuid": "8007e155-622e-4c9d-8a6e-67f49b4678f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "edt2-lgy.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "edt2-lgy.pages.dev"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[262] 🔹🇺🇸 США🔹 § 63",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "24.199.112.232",
+      "server_port": 443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.indevs.in",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=",
+        "headers": {
+          "Host": "sni.111000.indevs.in"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[266] 🔹🇺🇸 США🔹 § 64",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "156.229.161.107",
+      "server_port": 10001,
+      "uuid": "9c79aceb-4649-44ea-9698-b5e9ecf6d6da",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4jNz4Bw-FZlaX-WtfAdwK0hegY28W_k8AttGd-7hZn4",
+          "short_id": "fb2c6678"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[267] 🔹🇺🇸 США🔹 § 65",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "209.177.165.17",
+      "server_port": 443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.dynv6.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=",
+        "headers": {
+          "Host": "sni.111000.dynv6.net"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[274] 🔹🇺🇸 США🔹 § 66",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "154.26.189.70",
+      "server_port": 443,
+      "uuid": "06b65903-406d-4a41-8463-6fd5c0ee7798",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.skylee4.cloudns.ch",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/proxyip=ProxyIP.CMLiussss.net",
+        "headers": {
+          "Host": "sni.skylee4.cloudns.ch"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[277] 🔹🇺🇸 США🔹 § 67",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "159.89.87.21",
+      "server_port": 28190,
+      "uuid": "14c80e0e-f7ce-4991-94fc-99a1db4a9b1e",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "aws.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[278] 🔹🇺🇸 США🔹 § 68",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "142.171.88.226",
+      "server_port": 443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.indevs.in",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=",
+        "headers": {
+          "Host": "sni.111000.indevs.in"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[279] 🔹🇺🇸 США🔹 § 69",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "144.31.143.86",
+      "server_port": 443,
+      "uuid": "c8eb0ed4-0a36-4397-8d48-636c39f68a1f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SvQNeUViPFTH2-zG7HPZki4iY6a-d6yWdBXkMStqwjU",
+          "short_id": "74db5d"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[280] 🔹🇺🇸 США🔹 § 70",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "yesok42v2.ip4exordir.shop",
+      "server_port": 8880,
+      "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
+      "transport": {
+        "type": "grpc",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[285] 🔹🇺🇸 США🔹 § 71",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "64.181.227.82",
+      "server_port": 443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.indevs.in",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=",
+        "headers": {
+          "Host": "sni.111000.indevs.in"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[287] 🔹🇺🇸 США🔹 § 72",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "38.54.104.230",
+      "server_port": 443,
+      "uuid": "9be451e0-10a1-4344-a282-cdae536b98d3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "nAEubzfxjDBY00k_13U-GNjviSXosEaJ5dpwnmGV90Y"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[295] 🔹🇺🇸 США🔹 § 73",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "13.216.170.138",
+      "server_port": 443,
+      "uuid": "bafacd98-136a-4530-838d-4e5c51838dac",
+      "tls": {
+        "enabled": true,
+        "server_name": "juzi8186.qea.ccwu.cc",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/sale/about/api/juzibaipiao",
+        "headers": {
+          "Host": "juzi8186.qea.ccwu.cc"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[297] 🔹🇺🇸 США🔹 § 74",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "216.128.140.253",
+      "server_port": 26376,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.indevs.in",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?telegram%F0%9F%87%A8%F0%9F%87%B3+%40wangcai2=",
+        "headers": {
+          "Host": "sni.111000.indevs.in"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[301] 🔹🇺🇸 США🔹 § 75",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "64.23.252.20",
+      "server_port": 443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.dynv6.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=",
+        "headers": {
+          "Host": "sni.111000.dynv6.net"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[306] 🔹🇺🇸 США🔹 § 76",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "129.153.132.114",
+      "server_port": 46000,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.indevs.in",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=",
+        "headers": {
+          "Host": "sni.111000.indevs.in"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[312] 🔹🇺🇸 США🔹 § 77",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "45.82.251.115",
+      "server_port": 8880,
+      "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
+      "transport": {
+        "type": "grpc",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[316] 🔹🇺🇸 США🔹 § 78",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "108.162.198.247",
+      "server_port": 443,
+      "uuid": "5dc15e15-f285-4a9d-959b-0e4fbdd77b63",
+      "tls": {
+        "enabled": true,
+        "server_name": "powered-by-surena.configfarsi6982dd6e0355e.workers.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "powered-by-surena.configfarsi6982dd6e0355e.workers.dev"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[317] 🔹🇺🇸 США🔹 § 79",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "15.204.97.198",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[321] 🔹🇺🇸 США🔹 § 80",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "15.204.97.197",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[325] 🔹🇺🇸 США🔹 § 81",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "207.246.92.29",
+      "server_port": 443,
+      "uuid": "981fca81-5be1-41f8-ac9b-d138e8109943",
+      "tls": {
+        "enabled": true,
+        "server_name": "babayaga-6i7.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=",
+        "headers": {
+          "Host": "babayaga-6i7.pages.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[331] 🔹🇺🇸 США🔹 § 82",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "146.190.114.88",
+      "server_port": 443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.dynv6.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram🇨🇳 @WangCai2=",
+        "headers": {
+          "Host": "sni.111000.dynv6.net"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[337] 🔹🇺🇸 США🔹 § 83",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "207.246.98.244",
+      "server_port": 443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.dynv6.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=",
+        "headers": {
+          "Host": "sni.111000.dynv6.net"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[343] 🔹🇺🇸 США🔹 § 84",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "172.245.53.232",
+      "server_port": 443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.dynv6.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=",
+        "headers": {
+          "Host": "sni.111000.dynv6.net"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[345] 🔹🇺🇸 США🔹 § 85",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "74.48.141.167",
+      "server_port": 8443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.v6.navy",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "sni.111000.v6.navy"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[346] 🔹🇺🇸 США🔹 § 86",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "15.204.97.195",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[347] 🔹🇺🇸 США🔹 § 87",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "198.204.227.171",
+      "server_port": 2053,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.111000.dynv6.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=",
+        "headers": {
+          "Host": "sni.111000.dynv6.net"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "[353] 🔹🇺🇸 США🔹 § 88",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "77.105.162.153",
+      "server_port": 443,
+      "uuid": "322ffd77-9adc-4e10-8302-a8bcc14555a0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-ZIDWF9CykNoZYNpO6Vi7BdDyZl_hJUYxuIRmPnuxBk",
+          "short_id": "c6118398"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[357] 🔹🇺🇸 США🔹 § 89",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "37.19.198.160",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[358] 🔹🇺🇸 США🔹 § 90",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "154.53.60.197",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "8rb580EBG4l7tO8K"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[359] 🔹🇺🇸 США🔹 § 91",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "216.105.168.18",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bQZl7HDxSabr1FurTYQHFU"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[360] 🔹🇺🇸 США🔹 § 92",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "62.146.171.57",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "jd9FR12wprKPNJHg"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[361] 🔹🇺🇸 США🔹 § 93",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "62.146.171.59",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "MEmsQeJtPF1GMwJm"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[362] 🔹🇺🇸 США🔹 § 94",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "154.38.176.7",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "nKeE2ZFWVaE4DyjR"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[363] 🔹🇺🇸 США🔹 § 95",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "154.53.63.32",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "k6ruJuwgAUxIrkHb"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[364] 🔹🇺🇸 США🔹 § 96",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "71.19.148.74",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "XUMTygEM1jVYIvysXKqA5T"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[365] 🔹🇺🇸 США🔹 § 97",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "185.111.156.33",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "5mCH4624QflO1cFR"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[366] 🔹🇺🇸 США🔹 § 98",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "62.146.171.59",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "MEmsQeJtPF1GMwJm"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[367] 🔹🇺🇸 США🔹 § 99",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "37.19.198.244",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[368] 🔹🇺🇸 США🔹 § 100",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "154.12.240.141",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "mK7eN3z276Tr0vVA"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[369] 🔹🇺🇸 США🔹 § 101",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "66.94.125.178",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "14CLBaFBqwqxBJy6"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[370] 🔹🇺🇸 США🔹 § 102",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "108.181.118.10",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "G5p6ww4o67HB"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[371] 🔹🇺🇸 США🔹 § 103",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "156.146.38.167",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[372] 🔹🇺🇸 США🔹 § 104",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "104.192.226.106",
+      "server_port": 989,
+      "method": "aes-256-cfb",
+      "password": "f8f7aCzcPKbsF8p3"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[373] 🔹🇺🇸 США🔹 § 105",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "168.144.98.231",
+      "server_port": 22688,
+      "method": "chacha20-ietf-poly1305",
+      "password": "HRegeKRyT4eUTWChfsUEnAeMDcswgN0acez3yVYVFug="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[374] 🔹🇺🇸 США🔹 § 106",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "156.146.38.170",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[375] 🔹🇺🇸 США🔹 § 107",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "37.19.198.243",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[376] 🔹🇺🇸 США🔹 § 108",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "108.181.0.177",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "G5p6ww4o67HB"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[377] 🔹🇺🇸 США🔹 § 109",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "173.244.56.6",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[378] 🔹🇺🇸 США🔹 § 110",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "94.72.127.55",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "wlJSF0fC8uqB5Gm5"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[379] 🔹🇺🇸 США🔹 § 111",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "94.72.127.55",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "wlJSF0fC8uqB5Gm5"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[380] 🔹🇺🇸 США🔹 § 112",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "154.53.57.143",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "uwmRUOVM5ljNAtPj"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[381] 🔹🇺🇸 США🔹 § 113",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "173.244.56.9",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[382] 🔹🇺🇸 США🔹 § 114",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "149.28.255.6",
+      "server_port": 816,
+      "method": "chacha20-ietf-poly1305",
+      "password": "GyZ5Xo0ht41vYmW3H4"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[383] 🔹🇺🇸 США🔹 § 115",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "37.19.198.236",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[384] 🔹🇺🇸 США🔹 § 116",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "tinkered-pennies-puppies.freesocks.work",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "hbGrpfvNrJsUmKmPbR3iY2"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[385] 🔹🇺🇸 США🔹 § 117",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "108.181.57.93",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "RSo52SbxW40r"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[386] 🔹🇺🇸 США🔹 § 118",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "154.53.60.197",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "8rb580EBG4l7tO8K"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[387] 🔹🇺🇸 США🔹 § 119",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "154.53.63.42",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "SM7WYtAwvBORXKjI"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[388] 🔹🇺🇸 США🔹 § 120",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "154.38.176.7",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "nKeE2ZFWVaE4DyjR"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[389] 🔹🇺🇸 США🔹 § 121",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "154.53.57.143",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "uwmRUOVM5ljNAtPj"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[390] 🔹🇺🇸 США🔹 § 122",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "156.146.38.168",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[391] 🔹🇺🇸 США🔹 § 123",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "185.111.156.33",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "5mCH4624QflO1cFR"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[392] 🔹🇺🇸 США🔹 § 124",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "62.146.171.57",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "jd9FR12wprKPNJHg"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[393] 🔹🇺🇸 США🔹 § 125",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "173.234.29.2",
+      "server_port": 990,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[394] 🔹🇺🇸 США🔹 § 126",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "38.135.24.131",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "hbGrpfvNrJsUmKmPbR3iY2"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[395] 🔹🇺🇸 США🔹 § 127",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "154.53.60.212",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "ZfbPFDdeBj0B1Txs"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[396] 🔹🇺🇸 США🔹 § 128",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "107.172.219.230",
+      "server_port": 2096,
+      "method": "chacha20-ietf-poly1305",
+      "password": "768b923a-4918-46ad-96e7-9cf5543ddc4c"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[397] 🔹🇺🇸 США🔹 § 129",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "144.126.145.77",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "QzM0NfuMNngbVnZK"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[398] 🔹🇺🇸 США🔹 § 130",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "142.93.73.182",
+      "server_port": 45389,
+      "method": "chacha20-ietf-poly1305",
+      "password": "hk1SdyRWbYi3Igxeow9JdN"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[399] 🔹🇺🇸 США🔹 § 131",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "154.12.240.141",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "mK7eN3z276Tr0vVA"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[400] 🔹🇺🇸 США🔹 § 132",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "107.172.250.161",
+      "server_port": 59556,
+      "method": "chacha20-ietf-poly1305",
+      "password": "QTmLViU4VEmuwbOxUw4IXd"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[401] 🔹🇺🇸 США🔹 § 133",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "hackney-latest-strike.freesocks.work",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "XUMTygEM1jVYIvysXKqA5T"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[402] 🔹🇺🇸 США🔹 § 134",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "156.146.38.169",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[403] 🔹🇺🇸 США🔹 § 135",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "94.72.127.58",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "jJHq807bQ7TM0yOh"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[404] 🔹🇺🇸 США🔹 § 136",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "154.53.63.42",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "SM7WYtAwvBORXKjI"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[405] 🔹🇺🇸 США🔹 § 137",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "94.72.127.58",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "jJHq807bQ7TM0yOh"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[406] 🔹🇺🇸 США🔹 § 138",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "144.126.145.77",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "QzM0NfuMNngbVnZK"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[407] 🔹🇺🇸 США🔹 § 139",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "66.94.125.178",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "14CLBaFBqwqxBJy6"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[408] 🔹🇺🇸 США🔹 § 140",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "154.53.63.32",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "k6ruJuwgAUxIrkHb"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[409] 🔹🇺🇸 США🔹 § 141",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "154.53.60.212",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "ZfbPFDdeBj0B1Txs"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[410] 🔹🇺🇸 США🔹 § 142",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "154.12.242.150",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "7vZO55fXgXAJXa2F"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[411] 🔹🇺🇸 США🔹 § 143",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "154.12.242.150",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "7vZO55fXgXAJXa2F"
+    },
+    {
+      "type": "trojan",
+      "tag": "[417] 🔹🇺🇸 США🔹 § 144",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "64.94.95.115",
+      "server_port": 57142,
+      "password": "kkzh2prsyr2ik47as615",
+      "tls": {
+        "enabled": true,
+        "server_name": "static.rutube.ru",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "[419] 🔹🇺🇸 США🔹 § 145",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "64.94.95.114",
+      "server_port": 57142,
+      "password": "kkzh2prsyr2ik47as615",
+      "tls": {
+        "enabled": true,
+        "server_name": "static.rutube.ru",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "[420] 🔹🇺🇸 США🔹 § 146",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "64.94.95.117",
+      "server_port": 57142,
+      "password": "kkzh2prsyr2ik47as615",
+      "tls": {
+        "enabled": true,
+        "server_name": "static.rutube.ru",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "[421] 🔹🇺🇸 США🔹 § 147",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "8.39.125.191",
+      "server_port": 2083,
+      "password": "Nova-Proxy",
+      "tls": {
+        "enabled": true,
+        "server_name": "spring-queen-a95f.cewon19053.workers.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "spring-queen-a95f.cewon19053.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "[422] 🔹🇺🇸 США🔹 § 148",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "94.131.101.19",
+      "server_port": 4443,
+      "password": "strong-secret-pass-777",
+      "tls": {
+        "enabled": true,
+        "disable_sni": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "[423] 🔹🇺🇸 США🔹 § 149",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "82.198.246.233",
+      "server_port": 180,
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+      "security": "auto",
+      "authenticated_length": true,
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "[424] 🔹🇺🇸 США🔹 § 150",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "192.9.130.170",
+      "server_port": 443,
+      "uuid": "96d21cfe-b264-4bf3-8349-fb076d40837e",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "sanjose01.zgjok.com",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "sanjose01.zgjok.com"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "[426] 🔹🇺🇸 США🔹 § 151",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "38.91.107.49",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto",
+      "authenticated_length": true,
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "[427] 🔹🇺🇸 США🔹 § 152",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "45.89.53.115",
+      "server_port": 2053,
+      "uuid": "9b91e960-f8f7-41aa-ac67-f5c7b6b72e74",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "node-us.connectsuite.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "[428] 🔹🇺🇸 США🔹 § 153",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "172.236.249.24",
+      "server_port": 2053,
+      "uuid": "4b80aa86-4354-40bb-d2a3-47126cff0bea",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "usaapp1.jisuyun.top",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/usavm",
+        "headers": {
+          "Host": "usaapp1.jisuyun.top"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "[429] 🔹🇺🇸 США🔹 § 154",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "23.226.135.232",
+      "server_port": 55310,
+      "uuid": "22066968-ef90-455e-b981-4bf782d25386",
+      "security": "auto",
+      "authenticated_length": true,
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "[430] 🔹🇺🇸 США🔹 § 155",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "84.17.41.2",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto",
+      "authenticated_length": true,
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "[431] 🔹🇺🇸 США🔹 § 156",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "38.110.1.246",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto",
+      "authenticated_length": true,
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "[432] 🔹🇺🇸 США🔹 § 157",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "82.198.246.46",
+      "server_port": 180,
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+      "security": "auto",
+      "authenticated_length": true,
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "[433] 🔹🇺🇸 США🔹 § 158",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "104.168.1.102",
+      "server_port": 8222,
+      "uuid": "4b64bbe9-347d-4cbe-83e6-0c925a9583d8",
+      "security": "auto",
+      "authenticated_length": true,
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "[435] 🔹🇺🇸 США🔹 § 159",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "216.106.185.141",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto",
+      "authenticated_length": true,
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "[436] 🔹🇺🇸 США🔹 § 160",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "165.140.216.141",
+      "server_port": 443,
+      "uuid": "e7d72a8d-26f2-4b54-b366-0c43e0bcba7d",
+      "security": "auto",
+      "authenticated_length": true,
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "[437] 🔹🇺🇸 США🔹 § 161",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "172.235.33.179",
+      "server_port": 2053,
+      "uuid": "95dd45fb-8e36-4ff2-fa9e-24b68a34f3cd",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "usaapp2.jisuyun.top",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/usavm",
+        "headers": {
+          "Host": "usaapp2.jisuyun.top"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "[438] 🔹🇺🇸 США🔹 § 162",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "43.162.105.30",
+      "server_port": 10022,
+      "uuid": "91a988dc-99d5-4c0d-a999-a1d4dd72ad21",
+      "security": "auto",
+      "authenticated_length": true,
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "us1-ss.flyparts.cn"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "[439] 🔹🇺🇸 США🔹 § 163",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "us1-ss.flyparts.cn",
+      "server_port": 10022,
+      "uuid": "51cfc665-a557-4809-8ead-90d4bbd2ac81",
+      "security": "auto",
+      "authenticated_length": true,
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "us1-ss.flyparts.cn"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "[440] 🔹🇺🇸 США🔹 § 164",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "usaapp2.jisuyun.top",
+      "server_port": 2053,
+      "uuid": "95dd45fb-8e36-4ff2-fa9e-24b68a34f3cd",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "usaapp2.jisuyun.top",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/usavm",
+        "headers": {
+          "Host": "usaapp2.jisuyun.top"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "[441] 🔹🇺🇸 США🔹 § 165",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "169.197.142.22",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto",
+      "authenticated_length": true,
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "[442] 🔹🇺🇸 США🔹 § 166",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "82.198.246.9",
+      "server_port": 180,
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+      "security": "auto",
+      "authenticated_length": true,
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "[443] 🔹🇺🇸 США🔹 § 167",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "sanjose01.zgjok.com",
+      "server_port": 443,
+      "uuid": "96d21cfe-b264-4bf3-8349-fb076d40837e",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "sanjose01.zgjok.com",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "sanjose01.zgjok.com"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "[444] 🔹🇺🇸 США🔹 § 168",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "usaapp1.jisuyun.top",
+      "server_port": 2053,
+      "uuid": "4b80aa86-4354-40bb-d2a3-47126cff0bea",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "usaapp1.jisuyun.top",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/usavm",
+        "headers": {
+          "Host": "usaapp1.jisuyun.top"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "[445] 🔹🇺🇸 США🔹 § 169",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "67.220.72.237",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "[446] 🔹🇺🇸 США🔹 § 170",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "67.220.95.3",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "aes-128-gcm",
+      "authenticated_length": true,
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "[447] 🔹🇺🇸 США🔹 § 171",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "us02.bctuo.top",
+      "server_port": 1443,
+      "uuid": "31801968-9877-4ef5-be87-56503c34a69d",
+      "security": "auto",
+      "authenticated_length": true,
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "[449] 🔹🇺🇸 США🔹 § 172",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "38.114.123.42",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto",
+      "authenticated_length": true,
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "[452] 🔹🇺🇸 США🔹 § 173",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "130.94.12.121",
+      "server_port": 1443,
+      "uuid": "31801968-9877-4ef5-be87-56503c34a69d",
+      "security": "auto",
+      "authenticated_length": true,
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "[453] 🔹🇺🇸 США🔹 § 174",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "67.220.85.46",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "aes-128-gcm",
+      "authenticated_length": true,
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "[454] 🔹🇺🇸 США🔹 § 175",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "82.198.246.214",
+      "server_port": 180,
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+      "security": "auto",
+      "authenticated_length": true,
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "[455] 🔹🇺🇸 США🔹 § 176",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "node-us.connectsuite.org",
+      "server_port": 2053,
+      "uuid": "9b91e960-f8f7-41aa-ac67-f5c7b6b72e74",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "node-us.connectsuite.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "[456] 🔹🇺🇸 США🔹 § 177",
+      "detour": "🖥️ПК🖥️📱",
+      "server": "216.106.183.35",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "packet_encoding": "xudp"
+    }
+  ]
+}
