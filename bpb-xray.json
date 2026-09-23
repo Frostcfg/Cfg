@@ -1,69 +1,76 @@
 {
   "log": {
-    "level": "info"
+    "loglevel": "info"
   },
   "dns": {
     "servers": [
-      {
-        "tag": "dns-remote",
-        "address": "https://9.9.9.9/dns-query",
-        "detour": "proxy-chain-endpoint"
-      }
-    ],
-    "rules": [
-      {
-        "outbound": "any",
-        "server": "dns-remote"
-      }
+      "9.9.9.9"
     ]
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "proxy-chain-endpoint",
-      "server": "193.29.139.151",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
-      "detour": "proxy-chain-entry"
+      "protocol": "shadowsocks",
+      "tag": "ss-out",
+      "settings": {
+        "servers": [
+          {
+            "address": "193.29.139.151",
+            "port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+          }
+        ]
+      },
+      "proxySettings": {
+        "tag": "trojan-out"
+      }
     },
     {
-      "type": "trojan",
-      "tag": "proxy-chain-entry",
-      "server": "vlsdev.us.ci",
-      "server_port": 2053,
-      "password": "Y.sO2koRfnyd&wi$v0-",
-      "tls": {
-        "enabled": true,
-        "server_name": "vlsdev.us.ci",
-        "alpn": ["http/2", "http/1.1"],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        }
+      "protocol": "trojan",
+      "tag": "trojan-out",
+      "settings": {
+        "servers": [
+          {
+            "address": "vlsdev.us.ci",
+            "port": 2053,
+            "password": "Y.sO2koRfnyd&wi$v0-"
+          }
+        ]
       },
-      "transport": {
-        "type": "ws",
-        "path": "/tr/wgx6oG1KLe9YlsGt",
-        "headers": {
-          "Host": "vlsdev.us.ci",
-          "Sec-WebSocket-Protocol": "2560"
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vlsdev.us.ci",
+          "alpn": [
+            "http/2",
+            "http/1.1"
+          ],
+          "fingerprint": "safari"
+        },
+        "wsSettings": {
+          "path": "/tr/wgx6oG1KLe9YlsGt",
+          "headers": {
+            "Host": "vlsdev.us.ci",
+            "Sec-WebSocket-Protocol": "2560"
+          }
         }
       }
     },
     {
-      "type": "direct",
-      "tag": "direct"
+      "protocol": "freedom",
+      "tag": "direct",
+      "settings": {}
     }
   ],
-  "route": {
+  "routing": {
+    "domainStrategy": "AsIs",
     "rules": [
       {
-        "protocol": "dns",
-        "outbound": "dns-remote"
+        "type": "field",
+        "network": "tcp,udp",
+        "outboundTag": "ss-out"
       }
-    ],
-    "final": "proxy-chain-endpoint",
-    "auto_detect_interface": true
+    ]
   }
 }
