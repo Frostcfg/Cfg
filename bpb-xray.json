@@ -1,0 +1,5619 @@
+﻿[
+    {
+        "remarks": "💦 1. Trojan - Domain : 443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        "outbounds": [
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                        "path": "/tr/I0sMzyJdVtBQ5iAP16P?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "30nCk5Br2uLGVDhgvmO0u8gI.PageS.dev",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 1. 🔗 Trojan - Domain : 443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy"
+                    }
+                },
+                "tag": "chain"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                        "path": "/tr/I0sMzyJdVtBQ5iAP16P?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "30nCk5Br2uLGVDhgvmO0u8gI.PageS.dev",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "chain",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 2. Trojan - IPv4 : 443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        "outbounds": [
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "188.114.97.11",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                        "path": "/tr/OgSenCaT22rDFnVXuhrLoBzdEHv?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "30Nck5BR2ulgVDHGvmo0U8gi.PAges.dEv",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 2. 🔗 Trojan - IPv4 : 443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy"
+                    }
+                },
+                "tag": "chain"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "188.114.97.11",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                        "path": "/tr/OgSenCaT22rDFnVXuhrLoBzdEHv?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "30Nck5BR2ulgVDHGvmo0U8gi.PAges.dEv",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "chain",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 3. Trojan - IPv4 : 443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "188.114.96.11",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                        "path": "/tr/CeAXN3YkP7FhaJhPE4N5?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "30NCK5bR2ulGvdhgVMo0U8GI.pAgES.DeV",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 3. 🔗 Trojan - IPv4 : 443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy"
+                    }
+                },
+                "tag": "chain"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "188.114.96.11",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                        "path": "/tr/CeAXN3YkP7FhaJhPE4N5?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "30NCK5bR2ulGvdhgVMo0U8GI.pAgES.DeV",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "chain",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 4. Trojan C - Domain : 443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "maricdn.us.ci",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/3O6Lhh9vejtrO2nAJN6pyy?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 4. 🔗 Trojan C - Domain : 443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy"
+                    }
+                },
+                "tag": "chain"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "maricdn.us.ci",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/3O6Lhh9vejtrO2nAJN6pyy?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "chain",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 5. Trojan C - IPv4 : 443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "104.17.126.88",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/bcZSy2SSqCFA8iDuo?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 5. 🔗 Trojan C - IPv4 : 443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy"
+                    }
+                },
+                "tag": "chain"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "104.17.126.88",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/bcZSy2SSqCFA8iDuo?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "chain",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 6. Trojan C - IPv4 : 443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "31.43.179.76",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/GYa5ORcBBrYd6tCz4kiC1lQGj?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 6. 🔗 Trojan C - IPv4 : 443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy"
+                    }
+                },
+                "tag": "chain"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "31.43.179.76",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/GYa5ORcBBrYd6tCz4kiC1lQGj?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "chain",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 7. Trojan C - IPv4 : 443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "104.21.71.252",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/A1ZJXT6tX9KQSOHkovK63i6e?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 7. 🔗 Trojan C - IPv4 : 443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy"
+                    }
+                },
+                "tag": "chain"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "104.21.71.252",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/A1ZJXT6tX9KQSOHkovK63i6e?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "chain",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 8. Trojan C - IPv4 : 443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "89.116.250.57",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/52yOagD1KsCmHwlniJYWCtCeLu?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 8. 🔗 Trojan C - IPv4 : 443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy"
+                    }
+                },
+                "tag": "chain"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "89.116.250.57",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/52yOagD1KsCmHwlniJYWCtCeLu?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "chain",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 9. Trojan C - IPv4 : 443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "188.42.89.141",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/blnAdtaDoJnseUg31?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 9. 🔗 Trojan C - IPv4 : 443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy"
+                    }
+                },
+                "tag": "chain"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "188.42.89.141",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/blnAdtaDoJnseUg31?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "chain",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 10. Trojan C - IPv4 : 443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "104.21.202.43",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/kKfBxA9KXHjjBUOSMewFkD0fNA3dk?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 10. 🔗 Trojan C - IPv4 : 443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy"
+                    }
+                },
+                "tag": "chain"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "104.21.202.43",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/kKfBxA9KXHjjBUOSMewFkD0fNA3dk?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "chain",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 11. Trojan C - IPv4 : 443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "192.200.160.91",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/tcWPgdHGvXLAkzJd?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 11. 🔗 Trojan C - IPv4 : 443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy"
+                    }
+                },
+                "tag": "chain"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "192.200.160.91",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/tcWPgdHGvXLAkzJd?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "chain",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 12. Trojan - Domain : 8443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        "dns": {
+            "servers": [
+                {
+                    "address": "https://9.9.9.9/dns-query",
+                    "tag": "remote-dns"
+                },
+                {
+                    "address": "9.9.9.9",
+                    "domains": [
+                        "full:30nck5br2ulgvdhgvmo0u8gi.pages.dev"
+                    ],
+                    "skipFallback": true
+                }
+            ],
+            "queryStrategy": "UseIP",
+            "tag": "dns"
+        },
+        "inbounds": [
+            {
+                "listen": "0.0.0.0",
+                "port": 10808,
+                "protocol": "mixed",
+                "settings": {
+                    "auth": "noauth",
+                    "udp": true
+                },
+                "sniffing": {
+                    "destOverride": [
+                        "http",
+                        "tls"
+                    ],
+                    "enabled": true,
+                    "routeOnly": true
+                },
+                "tag": "mixed-in"
+            },
+            {
+                "listen": "0.0.0.0",
+                "port": 10853,
+                "protocol": "dokodemo-door",
+                "settings": {
+                    "address": "1.1.1.1",
+                    "network": "tcp,udp",
+                    "port": 53
+                },
+                "tag": "dns-in"
+            }
+        ],
+        "outbounds": [
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                        "path": "/tr/L5bfaclpkLfbidXUNl3WOkfQo2?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "30Nck5BR2uLGvdhGVmO0u8Gi.PagES.dEV",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 12. 🔗 Trojan - Domain : 8443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        "dns": {
+            "servers": [
+                {
+                    "address": "https://9.9.9.9/dns-query",
+                    "tag": "remote-dns"
+                },
+                {
+                    "address": "9.9.9.9",
+                    "domains": [
+                        "full:30nck5br2ulgvdhgvmo0u8gi.pages.dev"
+                    ],
+                    "skipFallback": true
+                }
+            ],
+            "queryStrategy": "UseIP",
+            "tag": "dns"
+        },
+        "inbounds": [
+            {
+                "listen": "0.0.0.0",
+                "port": 10808,
+                "protocol": "mixed",
+                "settings": {
+                    "auth": "noauth",
+                    "udp": true
+                },
+                "sniffing": {
+                    "destOverride": [
+                        "http",
+                        "tls"
+                    ],
+                    "enabled": true,
+                    "routeOnly": true
+                },
+                "tag": "mixed-in"
+            },
+            {
+                "listen": "0.0.0.0",
+                "port": 10853,
+                "protocol": "dokodemo-door",
+                "settings": {
+                    "address": "1.1.1.1",
+                    "network": "tcp,udp",
+                    "port": 53
+                },
+                "tag": "dns-in"
+            }
+        ],
+        "outbounds": [
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy"
+                    }
+                },
+                "tag": "chain"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                        "path": "/tr/L5bfaclpkLfbidXUNl3WOkfQo2?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "30Nck5BR2uLGvdhGVmO0u8Gi.PagES.dEV",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "chain",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 13. Trojan - IPv4 : 8443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "188.114.97.11",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                        "path": "/tr/L4rDIpJ7ZVrc42S9lb?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "30NCk5bR2ULgVDHgVmo0u8Gi.Pages.dev",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 13. 🔗 Trojan - IPv4 : 8443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy"
+                    }
+                },
+                "tag": "chain"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "188.114.97.11",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                        "path": "/tr/L4rDIpJ7ZVrc42S9lb?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "30NCk5bR2ULgVDHgVmo0u8Gi.Pages.dev",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "chain",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 14. Trojan - IPv4 : 8443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "188.114.96.11",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                        "path": "/tr/t6pEZIltoIkSdApScrK?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "30Nck5bR2UlGVDHGvmo0u8gi.pAGES.deV",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 14. 🔗 Trojan - IPv4 : 8443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy"
+                    }
+                },
+                "tag": "chain"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "188.114.96.11",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                        "path": "/tr/t6pEZIltoIkSdApScrK?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "30Nck5bR2UlGVDHGvmo0u8gi.pAGES.deV",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "chain",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 15. Trojan C - Domain : 8443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "maricdn.us.ci",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/eypwgcFBzHheQazsTncbwnDfni7d6?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 15. 🔗 Trojan C - Domain : 8443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy"
+                    }
+                },
+                "tag": "chain"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "maricdn.us.ci",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/eypwgcFBzHheQazsTncbwnDfni7d6?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "chain",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 16. Trojan C - IPv4 : 8443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "104.17.126.88",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/V5F5atkoksjEMKzcQLkP?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 16. 🔗 Trojan C - IPv4 : 8443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy"
+                    }
+                },
+                "tag": "chain"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "104.17.126.88",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/V5F5atkoksjEMKzcQLkP?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "chain",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 17. Trojan C - IPv4 : 8443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "31.43.179.76",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/9ySXN6J7wRfXTEcT?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 17. 🔗 Trojan C - IPv4 : 8443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy"
+                    }
+                },
+                "tag": "chain"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "31.43.179.76",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/9ySXN6J7wRfXTEcT?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "chain",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 18. Trojan C - IPv4 : 8443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "104.21.71.252",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/aqLfbCPLH9QCdmUQM?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 18. 🔗 Trojan C - IPv4 : 8443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy"
+                    }
+                },
+                "tag": "chain"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "104.21.71.252",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/aqLfbCPLH9QCdmUQM?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "chain",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 19. Trojan C - IPv4 : 8443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "89.116.250.57",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/rzjTPbipEZ00inhsqjm1uZ4i7B?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 19. 🔗 Trojan C - IPv4 : 8443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy"
+                    }
+                },
+                "tag": "chain"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "89.116.250.57",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/rzjTPbipEZ00inhsqjm1uZ4i7B?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "chain",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 20. Trojan C - IPv4 : 8443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "188.42.89.141",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/BYXvVklMKypm7XQkZ?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 20. 🔗 Trojan C - IPv4 : 8443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy"
+                    }
+                },
+                "tag": "chain"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "188.42.89.141",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/BYXvVklMKypm7XQkZ?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "chain",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 21. Trojan C - IPv4 : 8443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "104.21.202.43",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/syYZBCNSjh8ryBUa7iuy9?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 21. 🔗 Trojan C - IPv4 : 8443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy"
+                    }
+                },
+                "tag": "chain"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "104.21.202.43",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/syYZBCNSjh8ryBUa7iuy9?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "chain",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 22. Trojan C - IPv4 : 8443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "192.200.160.91",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/AWhinU9kJBBTGZkf?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 22. 🔗 Trojan C - IPv4 : 8443",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy"
+                    }
+                },
+                "tag": "chain"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "192.200.160.91",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/AWhinU9kJBBTGZkf?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "outboundTag": "chain",
+                    "type": "field"
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 Best Ping 🚀",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                        "path": "/tr/I0sMzyJdVtBQ5iAP16P?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "30nCk5Br2uLGVDhgvmO0u8gI.PageS.dev",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-1"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "188.114.97.11",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                        "path": "/tr/OgSenCaT22rDFnVXuhrLoBzdEHv?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "30Nck5BR2ulgVDHGvmo0U8gi.PAges.dEv",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-2"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "188.114.96.11",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                        "path": "/tr/CeAXN3YkP7FhaJhPE4N5?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "30NCK5bR2ulGvdhgVMo0U8GI.pAgES.DeV",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-3"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "maricdn.us.ci",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/3O6Lhh9vejtrO2nAJN6pyy?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-4"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "104.17.126.88",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/bcZSy2SSqCFA8iDuo?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-5"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "31.43.179.76",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/GYa5ORcBBrYd6tCz4kiC1lQGj?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-6"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "104.21.71.252",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/A1ZJXT6tX9KQSOHkovK63i6e?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-7"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "89.116.250.57",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/52yOagD1KsCmHwlniJYWCtCeLu?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-8"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "188.42.89.141",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/blnAdtaDoJnseUg31?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-9"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "104.21.202.43",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/kKfBxA9KXHjjBUOSMewFkD0fNA3dk?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-10"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "192.200.160.91",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/tcWPgdHGvXLAkzJd?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-11"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                        "path": "/tr/L5bfaclpkLfbidXUNl3WOkfQo2?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "30Nck5BR2uLGvdhGVmO0u8Gi.PagES.dEV",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-12"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "188.114.97.11",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                        "path": "/tr/L4rDIpJ7ZVrc42S9lb?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "30NCk5bR2ULgVDHgVmo0u8Gi.Pages.dev",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-13"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "188.114.96.11",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                        "path": "/tr/t6pEZIltoIkSdApScrK?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "30Nck5bR2UlGVDHGvmo0u8gi.pAGES.deV",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-14"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "maricdn.us.ci",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/eypwgcFBzHheQazsTncbwnDfni7d6?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-15"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "104.17.126.88",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/V5F5atkoksjEMKzcQLkP?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-16"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "31.43.179.76",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/9ySXN6J7wRfXTEcT?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-17"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "104.21.71.252",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/aqLfbCPLH9QCdmUQM?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-18"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "89.116.250.57",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/rzjTPbipEZ00inhsqjm1uZ4i7B?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-19"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "188.42.89.141",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/BYXvVklMKypm7XQkZ?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-20"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "104.21.202.43",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/syYZBCNSjh8ryBUa7iuy9?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-21"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "192.200.160.91",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/AWhinU9kJBBTGZkf?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-22"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "balancerTag": "all-proxies",
+                    "type": "field"
+                }
+            ],
+            "balancers": [
+                {
+                    "tag": "all-proxies",
+                    "selector": [
+                        "proxy"
+                    ],
+                }
+            ]
+        }
+    },
+    {
+        "remarks": "💦 🔗 Best Ping 🚀",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "warning"
+        },
+        
+        "outbounds": [
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy-1"
+                    }
+                },
+                "tag": "chain-1"
+            },
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy-2"
+                    }
+                },
+                "tag": "chain-2"
+            },
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy-3"
+                    }
+                },
+                "tag": "chain-3"
+            },
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy-4"
+                    }
+                },
+                "tag": "chain-4"
+            },
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy-5"
+                    }
+                },
+                "tag": "chain-5"
+            },
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy-6"
+                    }
+                },
+                "tag": "chain-6"
+            },
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy-7"
+                    }
+                },
+                "tag": "chain-7"
+            },
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy-8"
+                    }
+                },
+                "tag": "chain-8"
+            },
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy-9"
+                    }
+                },
+                "tag": "chain-9"
+            },
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy-10"
+                    }
+                },
+                "tag": "chain-10"
+            },
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy-11"
+                    }
+                },
+                "tag": "chain-11"
+            },
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy-12"
+                    }
+                },
+                "tag": "chain-12"
+            },
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy-13"
+                    }
+                },
+                "tag": "chain-13"
+            },
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy-14"
+                    }
+                },
+                "tag": "chain-14"
+            },
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy-15"
+                    }
+                },
+                "tag": "chain-15"
+            },
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy-16"
+                    }
+                },
+                "tag": "chain-16"
+            },
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy-17"
+                    }
+                },
+                "tag": "chain-17"
+            },
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy-18"
+                    }
+                },
+                "tag": "chain-18"
+            },
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy-19"
+                    }
+                },
+                "tag": "chain-19"
+            },
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy-20"
+                    }
+                },
+                "tag": "chain-20"
+            },
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy-21"
+                    }
+                },
+                "tag": "chain-21"
+            },
+            {
+                "protocol": "shadowsocks",
+                "mux": {
+                    "enabled": true,
+                    "concurrency": 8,
+                    "xudpConcurrency": 16,
+                    "xudpProxyUDP443": "reject"
+                },
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "193.29.139.151",
+                            "port": 8080,
+                            "method": "chacha20-ietf-poly1305",
+                            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "raw",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4",
+                        "dialerProxy": "proxy-22"
+                    }
+                },
+                "tag": "chain-22"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                        "path": "/tr/I0sMzyJdVtBQ5iAP16P?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "30nCk5Br2uLGVDhgvmO0u8gI.PageS.dev",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-1"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "188.114.97.11",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                        "path": "/tr/OgSenCaT22rDFnVXuhrLoBzdEHv?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "30Nck5BR2ulgVDHGvmo0U8gi.PAges.dEv",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-2"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "188.114.96.11",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                        "path": "/tr/CeAXN3YkP7FhaJhPE4N5?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "30NCK5bR2ulGvdhgVMo0U8GI.pAgES.DeV",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-3"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "maricdn.us.ci",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/3O6Lhh9vejtrO2nAJN6pyy?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-4"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "104.17.126.88",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/bcZSy2SSqCFA8iDuo?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-5"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "31.43.179.76",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/GYa5ORcBBrYd6tCz4kiC1lQGj?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-6"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "104.21.71.252",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/A1ZJXT6tX9KQSOHkovK63i6e?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-7"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "89.116.250.57",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/52yOagD1KsCmHwlniJYWCtCeLu?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-8"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "188.42.89.141",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/blnAdtaDoJnseUg31?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-9"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "104.21.202.43",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/kKfBxA9KXHjjBUOSMewFkD0fNA3dk?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-10"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "192.200.160.91",
+                            "port": 443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/tcWPgdHGvXLAkzJd?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-11"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                        "path": "/tr/L5bfaclpkLfbidXUNl3WOkfQo2?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "30Nck5BR2uLGvdhGVmO0u8Gi.PagES.dEV",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-12"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "188.114.97.11",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                        "path": "/tr/L4rDIpJ7ZVrc42S9lb?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "30NCk5bR2ULgVDHgVmo0u8Gi.Pages.dev",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-13"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "188.114.96.11",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+                        "path": "/tr/t6pEZIltoIkSdApScrK?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "30Nck5bR2UlGVDHGvmo0u8gi.pAGES.deV",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-14"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "maricdn.us.ci",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/eypwgcFBzHheQazsTncbwnDfni7d6?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-15"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "104.17.126.88",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/V5F5atkoksjEMKzcQLkP?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-16"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "31.43.179.76",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/9ySXN6J7wRfXTEcT?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-17"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "104.21.71.252",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/aqLfbCPLH9QCdmUQM?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-18"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "89.116.250.57",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/rzjTPbipEZ00inhsqjm1uZ4i7B?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-19"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "188.42.89.141",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/BYXvVklMKypm7XQkZ?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-20"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "104.21.202.43",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/syYZBCNSjh8ryBUa7iuy9?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-21"
+            },
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "192.200.160.91",
+                            "port": 8443,
+                            "password": "G:0BGIv6Kef5.qsfd"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "maricdn.us.ci",
+                        "path": "/tr/AWhinU9kJBBTGZkf?ed=2560"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "maricdn.us.ci",
+                        "fingerprint": "safari",
+                        "alpn": [
+                          "http/2",  "http/1.1"
+                        ]
+                    },
+                    "sockopt": {
+                        "domainStrategy": "UseIP",
+                        "happyEyeballs": {
+                            "tryDelayMs": 250,
+                            "prioritizeIPv6": false,
+                            "interleave": 2,
+                            "maxConcurrentTry": 4
+                        }
+                    }
+                },
+                "tag": "proxy-22"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                
+                {
+                    "network": "tcp",
+                    "balancerTag": "all-chains",
+                    "type": "field"
+                }
+            ],
+            "balancers": [
+                {
+                    "tag": "all-proxies",
+                    "selector": [
+                        "proxy"
+                    ]
+                },
+                {
+                    "tag": "all-chains",
+                    "selector": [
+                        "chain"
+                    ]
+                }
+            ]
+        }
+        
+    }
+]
