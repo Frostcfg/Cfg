@@ -36,7 +36,7 @@
       "tls": {
         "enabled": true,
         "server_name": "vlsdev.us.ci",
-        "alpn": ["h2"],
+        "alpn": ["http/2", "http/1.1"],
         "utls": {
           "enabled": true,
           "fingerprint": "safari"
