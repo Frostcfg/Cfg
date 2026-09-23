@@ -1,0 +1,985 @@
+﻿{
+    "outbounds": [
+        {
+            "tag": "💦 1. Trojan - Domain : 443",
+            "type": "trojan",
+            "server": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+            "server_port": 443,
+            "tcp_fast_open": false,
+            "password": "G:0BGIv6Kef5.qsfd",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "30NCk5br2uLGVdHGVmO0u8gi.PaGeS.DEv",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/2", "http/1.1"
+                        ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tr/rjyfhMa0iC8YCA5l8f",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev"
+                }
+            },
+            "domain_resolver": "dns-direct"
+        },
+        {
+            "tag": "💦 1. 🔗 Trojan - Domain : 443",
+            "type": "shadowsocks",
+            "server": "193.29.139.151",
+            "server_port": 8080,
+            "tcp_fast_open": false,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "network": "tcp",
+            "detour": "💦 1. Trojan - Domain : 443"
+        },
+        {
+            "tag": "💦 2. Trojan - IPv4 : 443",
+            "type": "trojan",
+            "server": "188.114.96.11",
+            "server_port": 443,
+            "tcp_fast_open": false,
+            "password": "G:0BGIv6Kef5.qsfd",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "30NcK5Br2UlgVdHGvMO0U8gi.pageS.dEv",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/2", "http/1.1"
+                        ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tr/7uZc6fRi2RU6ivV39JGJBFF",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 2. 🔗 Trojan - IPv4 : 443",
+            "type": "shadowsocks",
+            "server": "193.29.139.151",
+            "server_port": 8080,
+            "tcp_fast_open": false,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "network": "tcp",
+            "detour": "💦 2. Trojan - IPv4 : 443"
+        },
+        {
+            "tag": "💦 3. Trojan - IPv4 : 443",
+            "type": "trojan",
+            "server": "188.114.97.11",
+            "server_port": 443,
+            "tcp_fast_open": false,
+            "password": "G:0BGIv6Kef5.qsfd",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "30NCK5Br2ULgvdHgvMO0U8gi.PaGES.dEv",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/2", "http/1.1"
+                        ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tr/2nEJpkqSIvz7T4lip5nu1hpOZxX",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 3. 🔗 Trojan - IPv4 : 443",
+            "type": "shadowsocks",
+            "server": "193.29.139.151",
+            "server_port": 8080,
+            "tcp_fast_open": false,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "network": "tcp",
+            "detour": "💦 3. Trojan - IPv4 : 443"
+        },
+        {
+            "tag": "💦 4. Trojan C - Domain : 443",
+            "type": "trojan",
+            "server": "maricdn.us.ci",
+            "server_port": 443,
+            "tcp_fast_open": false,
+            "password": "G:0BGIv6Kef5.qsfd",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "maricdn.us.ci",
+                "record_fragment": false,
+                "insecure": true,
+                "alpn": [
+                    "http/2", "http/1.1"
+                        ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tr/vHrE03NlQaHMCLRNvmhtSM5ybVsE",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "maricdn.us.ci"
+                }
+            },
+            "domain_resolver": "dns-direct"
+        },
+        {
+            "tag": "💦 4. 🔗 Trojan C - Domain : 443",
+            "type": "shadowsocks",
+            "server": "193.29.139.151",
+            "server_port": 8080,
+            "tcp_fast_open": false,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "network": "tcp",
+            "detour": "💦 4. Trojan C - Domain : 443"
+        },
+        {
+            "tag": "💦 5. Trojan C - IPv4 : 443",
+            "type": "trojan",
+            "server": "104.17.126.88",
+            "server_port": 443,
+            "tcp_fast_open": false,
+            "password": "G:0BGIv6Kef5.qsfd",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "maricdn.us.ci",
+                "record_fragment": false,
+                "insecure": true,
+                "alpn": [
+                    "http/2", "http/1.1"
+                        ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tr/veF4dkGvwUsHkjrp8V1rT0K",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "maricdn.us.ci"
+                }
+            }
+        },
+        {
+            "tag": "💦 5. 🔗 Trojan C - IPv4 : 443",
+            "type": "shadowsocks",
+            "server": "193.29.139.151",
+            "server_port": 8080,
+            "tcp_fast_open": false,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "network": "tcp",
+            "detour": "💦 5. Trojan C - IPv4 : 443"
+        },
+        {
+            "tag": "💦 6. Trojan C - IPv4 : 443",
+            "type": "trojan",
+            "server": "31.43.179.76",
+            "server_port": 443,
+            "tcp_fast_open": false,
+            "password": "G:0BGIv6Kef5.qsfd",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "maricdn.us.ci",
+                "record_fragment": false,
+                "insecure": true,
+                "alpn": [
+                    "http/2", "http/1.1"
+                        ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tr/FCMPsEthzfTHBvcG",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "maricdn.us.ci"
+                }
+            }
+        },
+        {
+            "tag": "💦 6. 🔗 Trojan C - IPv4 : 443",
+            "type": "shadowsocks",
+            "server": "193.29.139.151",
+            "server_port": 8080,
+            "tcp_fast_open": false,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "network": "tcp",
+            "detour": "💦 6. Trojan C - IPv4 : 443"
+        },
+        {
+            "tag": "💦 7. Trojan C - IPv4 : 443",
+            "type": "trojan",
+            "server": "104.21.71.252",
+            "server_port": 443,
+            "tcp_fast_open": false,
+            "password": "G:0BGIv6Kef5.qsfd",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "maricdn.us.ci",
+                "record_fragment": false,
+                "insecure": true,
+                "alpn": [
+                    "http/2", "http/1.1"
+                        ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tr/nKGsCJ6rLo1Upt78sxlT",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "maricdn.us.ci"
+                }
+            }
+        },
+        {
+            "tag": "💦 7. 🔗 Trojan C - IPv4 : 443",
+            "type": "shadowsocks",
+            "server": "193.29.139.151",
+            "server_port": 8080,
+            "tcp_fast_open": false,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "network": "tcp",
+            "detour": "💦 7. Trojan C - IPv4 : 443"
+        },
+        {
+            "tag": "💦 8. Trojan C - IPv4 : 443",
+            "type": "trojan",
+            "server": "89.116.250.57",
+            "server_port": 443,
+            "tcp_fast_open": false,
+            "password": "G:0BGIv6Kef5.qsfd",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "maricdn.us.ci",
+                "record_fragment": false,
+                "insecure": true,
+                "alpn": [
+                    "http/2", "http/1.1"
+                        ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tr/fQumdW91zVidR15hasckjV0g",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "maricdn.us.ci"
+                }
+            }
+        },
+        {
+            "tag": "💦 8. 🔗 Trojan C - IPv4 : 443",
+            "type": "shadowsocks",
+            "server": "193.29.139.151",
+            "server_port": 8080,
+            "tcp_fast_open": false,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "network": "tcp",
+            "detour": "💦 8. Trojan C - IPv4 : 443"
+        },
+        {
+            "tag": "💦 9. Trojan C - IPv4 : 443",
+            "type": "trojan",
+            "server": "188.42.89.141",
+            "server_port": 443,
+            "tcp_fast_open": false,
+            "password": "G:0BGIv6Kef5.qsfd",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "maricdn.us.ci",
+                "record_fragment": false,
+                "insecure": true,
+                "alpn": [
+                    "http/2", "http/1.1"
+                        ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tr/aje4DgzhXspf1PhpiR2",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "maricdn.us.ci"
+                }
+            }
+        },
+        {
+            "tag": "💦 9. 🔗 Trojan C - IPv4 : 443",
+            "type": "shadowsocks",
+            "server": "193.29.139.151",
+            "server_port": 8080,
+            "tcp_fast_open": false,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "network": "tcp",
+            "detour": "💦 9. Trojan C - IPv4 : 443"
+        },
+        {
+            "tag": "💦 10. Trojan C - IPv4 : 443",
+            "type": "trojan",
+            "server": "104.21.202.43",
+            "server_port": 443,
+            "tcp_fast_open": false,
+            "password": "G:0BGIv6Kef5.qsfd",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "maricdn.us.ci",
+                "record_fragment": false,
+                "insecure": true,
+                "alpn": [
+                    "http/2", "http/1.1"
+                        ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tr/AsoemsGNT94K7pxef1jt2Bt",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "maricdn.us.ci"
+                }
+            }
+        },
+        {
+            "tag": "💦 10. 🔗 Trojan C - IPv4 : 443",
+            "type": "shadowsocks",
+            "server": "193.29.139.151",
+            "server_port": 8080,
+            "tcp_fast_open": false,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "network": "tcp",
+            "detour": "💦 10. Trojan C - IPv4 : 443"
+        },
+        {
+            "tag": "💦 11. Trojan C - IPv4 : 443",
+            "type": "trojan",
+            "server": "192.200.160.91",
+            "server_port": 443,
+            "tcp_fast_open": false,
+            "password": "G:0BGIv6Kef5.qsfd",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "maricdn.us.ci",
+                "record_fragment": false,
+                "insecure": true,
+                "alpn": [
+                    "http/2", "http/1.1"
+                        ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tr/OEfqBQMPqWBEUcieuoMwU6",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "maricdn.us.ci"
+                }
+            }
+        },
+        {
+            "tag": "💦 11. 🔗 Trojan C - IPv4 : 443",
+            "type": "shadowsocks",
+            "server": "193.29.139.151",
+            "server_port": 8080,
+            "tcp_fast_open": false,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "network": "tcp",
+            "detour": "💦 11. Trojan C - IPv4 : 443"
+        },
+        {
+            "tag": "💦 12. Trojan - Domain : 8443",
+            "type": "trojan",
+            "server": "30nck5br2ulgvdhgvmo0u8gi.pages.dev",
+            "server_port": 8443,
+            "tcp_fast_open": false,
+            "password": "G:0BGIv6Kef5.qsfd",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "30nCK5Br2uLGVDhGvMo0u8gi.pAGES.DEV",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/2", "http/1.1"
+                        ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tr/MLirwh5JQMT36OOeP4sn",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev"
+                }
+            },
+            "domain_resolver": "dns-direct"
+        },
+        {
+            "tag": "💦 12. 🔗 Trojan - Domain : 8443",
+            "type": "shadowsocks",
+            "server": "193.29.139.151",
+            "server_port": 8080,
+            "tcp_fast_open": false,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "network": "tcp",
+            "detour": "💦 12. Trojan - Domain : 8443"
+        },
+        {
+            "tag": "💦 13. Trojan - IPv4 : 8443",
+            "type": "trojan",
+            "server": "188.114.96.11",
+            "server_port": 8443,
+            "tcp_fast_open": false,
+            "password": "G:0BGIv6Kef5.qsfd",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "30nCk5bR2UlgvdHgvmO0U8gI.pageS.DEv",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/2", "http/1.1"
+                        ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tr/m7u6g2JYjWq2I9UgAL3TI2xJnyp",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 13. 🔗 Trojan - IPv4 : 8443",
+            "type": "shadowsocks",
+            "server": "193.29.139.151",
+            "server_port": 8080,
+            "tcp_fast_open": false,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "network": "tcp",
+            "detour": "💦 13. Trojan - IPv4 : 8443"
+        },
+        {
+            "tag": "💦 14. Trojan - IPv4 : 8443",
+            "type": "trojan",
+            "server": "188.114.97.11",
+            "server_port": 8443,
+            "tcp_fast_open": false,
+            "password": "G:0BGIv6Kef5.qsfd",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "30Nck5BR2ULGVdHGVMO0u8gi.paGeS.dEv",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/2", "http/1.1"
+                        ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tr/40SC3DAvjPVHSdxtARxyic8Iij629Vn",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "30nck5br2ulgvdhgvmo0u8gi.pages.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 14. 🔗 Trojan - IPv4 : 8443",
+            "type": "shadowsocks",
+            "server": "193.29.139.151",
+            "server_port": 8080,
+            "tcp_fast_open": false,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "network": "tcp",
+            "detour": "💦 14. Trojan - IPv4 : 8443"
+        },
+        {
+            "tag": "💦 15. Trojan C - Domain : 8443",
+            "type": "trojan",
+            "server": "maricdn.us.ci",
+            "server_port": 8443,
+            "tcp_fast_open": false,
+            "password": "G:0BGIv6Kef5.qsfd",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "maricdn.us.ci",
+                "record_fragment": false,
+                "insecure": true,
+                "alpn": [
+                    "http/2", "http/1.1"
+                        ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tr/LXvX41NeEMeaAFNYZzmJylVQzGH",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "maricdn.us.ci"
+                }
+            },
+            "domain_resolver": "dns-direct"
+        },
+        {
+            "tag": "💦 15. 🔗 Trojan C - Domain : 8443",
+            "type": "shadowsocks",
+            "server": "193.29.139.151",
+            "server_port": 8080,
+            "tcp_fast_open": false,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "network": "tcp",
+            "detour": "💦 15. Trojan C - Domain : 8443"
+        },
+        {
+            "tag": "💦 16. Trojan C - IPv4 : 8443",
+            "type": "trojan",
+            "server": "104.17.126.88",
+            "server_port": 8443,
+            "tcp_fast_open": false,
+            "password": "G:0BGIv6Kef5.qsfd",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "maricdn.us.ci",
+                "record_fragment": false,
+                "insecure": true,
+                "alpn": [
+                    "http/2", "http/1.1"
+                        ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tr/icULqnvYUP5zO7Tda2B",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "maricdn.us.ci"
+                }
+            }
+        },
+        {
+            "tag": "💦 16. 🔗 Trojan C - IPv4 : 8443",
+            "type": "shadowsocks",
+            "server": "193.29.139.151",
+            "server_port": 8080,
+            "tcp_fast_open": false,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "network": "tcp",
+            "detour": "💦 16. Trojan C - IPv4 : 8443"
+        },
+        {
+            "tag": "💦 17. Trojan C - IPv4 : 8443",
+            "type": "trojan",
+            "server": "31.43.179.76",
+            "server_port": 8443,
+            "tcp_fast_open": false,
+            "password": "G:0BGIv6Kef5.qsfd",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "maricdn.us.ci",
+                "record_fragment": false,
+                "insecure": true,
+                "alpn": [
+                    "http/2", "http/1.1"
+                        ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tr/eS7NliMRRgRc4mRExHic8btP",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "maricdn.us.ci"
+                }
+            }
+        },
+        {
+            "tag": "💦 17. 🔗 Trojan C - IPv4 : 8443",
+            "type": "shadowsocks",
+            "server": "193.29.139.151",
+            "server_port": 8080,
+            "tcp_fast_open": false,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "network": "tcp",
+            "detour": "💦 17. Trojan C - IPv4 : 8443"
+        },
+        {
+            "tag": "💦 18. Trojan C - IPv4 : 8443",
+            "type": "trojan",
+            "server": "104.21.71.252",
+            "server_port": 8443,
+            "tcp_fast_open": false,
+            "password": "G:0BGIv6Kef5.qsfd",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "maricdn.us.ci",
+                "record_fragment": false,
+                "insecure": true,
+                "alpn": [
+                    "http/2", "http/1.1"
+                        ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tr/WRtblJevQu2hbx5zL",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "maricdn.us.ci"
+                }
+            }
+        },
+        {
+            "tag": "💦 18. 🔗 Trojan C - IPv4 : 8443",
+            "type": "shadowsocks",
+            "server": "193.29.139.151",
+            "server_port": 8080,
+            "tcp_fast_open": false,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "network": "tcp",
+            "detour": "💦 18. Trojan C - IPv4 : 8443"
+        },
+        {
+            "tag": "💦 19. Trojan C - IPv4 : 8443",
+            "type": "trojan",
+            "server": "89.116.250.57",
+            "server_port": 8443,
+            "tcp_fast_open": false,
+            "password": "G:0BGIv6Kef5.qsfd",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "maricdn.us.ci",
+                "record_fragment": false,
+                "insecure": true,
+                "alpn": [
+                    "http/2", "http/1.1"
+                        ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tr/gqcPEF6MQ6FNuC0690THR8vhEsub",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "maricdn.us.ci"
+                }
+            }
+        },
+        {
+            "tag": "💦 19. 🔗 Trojan C - IPv4 : 8443",
+            "type": "shadowsocks",
+            "server": "193.29.139.151",
+            "server_port": 8080,
+            "tcp_fast_open": false,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "network": "tcp",
+            "detour": "💦 19. Trojan C - IPv4 : 8443"
+        },
+        {
+            "tag": "💦 20. Trojan C - IPv4 : 8443",
+            "type": "trojan",
+            "server": "188.42.89.141",
+            "server_port": 8443,
+            "tcp_fast_open": false,
+            "password": "G:0BGIv6Kef5.qsfd",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "maricdn.us.ci",
+                "record_fragment": false,
+                "insecure": true,
+                "alpn": [
+                    "http/2", "http/1.1"
+                        ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tr/oiLZ108KwHLenqnDj8cfuC",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "maricdn.us.ci"
+                }
+            }
+        },
+        {
+            "tag": "💦 20. 🔗 Trojan C - IPv4 : 8443",
+            "type": "shadowsocks",
+            "server": "193.29.139.151",
+            "server_port": 8080,
+            "tcp_fast_open": false,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "network": "tcp",
+            "detour": "💦 20. Trojan C - IPv4 : 8443"
+        },
+        {
+            "tag": "💦 21. Trojan C - IPv4 : 8443",
+            "type": "trojan",
+            "server": "104.21.202.43",
+            "server_port": 8443,
+            "tcp_fast_open": false,
+            "password": "G:0BGIv6Kef5.qsfd",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "maricdn.us.ci",
+                "record_fragment": false,
+                "insecure": true,
+                "alpn": [
+                    "http/2", "http/1.1"
+                        ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tr/bS3hqQ63yctlLlJHic8QN",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "maricdn.us.ci"
+                }
+            }
+        },
+        {
+            "tag": "💦 21. 🔗 Trojan C - IPv4 : 8443",
+            "type": "shadowsocks",
+            "server": "193.29.139.151",
+            "server_port": 8080,
+            "tcp_fast_open": false,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "network": "tcp",
+            "detour": "💦 21. Trojan C - IPv4 : 8443"
+        },
+        {
+            "tag": "💦 22. Trojan C - IPv4 : 8443",
+            "type": "trojan",
+            "server": "192.200.160.91",
+            "server_port": 8443,
+            "tcp_fast_open": false,
+            "password": "G:0BGIv6Kef5.qsfd",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "maricdn.us.ci",
+                "record_fragment": false,
+                "insecure": true,
+                "alpn": [
+                    "http/2", "http/1.1"
+                        ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/tr/hdL9bDd2ewHciehQJ3hJkx7iL5LkDJt",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "maricdn.us.ci"
+                }
+            }
+        },
+        {
+            "tag": "💦 22. 🔗 Trojan C - IPv4 : 8443",
+            "type": "shadowsocks",
+            "server": "193.29.139.151",
+            "server_port": 8080,
+            "tcp_fast_open": false,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "network": "tcp",
+            "detour": "💦 22. Trojan C - IPv4 : 8443"
+        },
+        {
+            "type": "selector",
+            "tag": "✅ Selector",
+            "outbounds": [
+                "💦 Best Ping 🚀",
+                "💦 🔗 Best Ping 🚀",
+                "💦 1. Trojan - Domain : 443",
+                "💦 2. Trojan - IPv4 : 443",
+                "💦 3. Trojan - IPv4 : 443",
+                "💦 4. Trojan C - Domain : 443",
+                "💦 5. Trojan C - IPv4 : 443",
+                "💦 6. Trojan C - IPv4 : 443",
+                "💦 7. Trojan C - IPv4 : 443",
+                "💦 8. Trojan C - IPv4 : 443",
+                "💦 9. Trojan C - IPv4 : 443",
+                "💦 10. Trojan C - IPv4 : 443",
+                "💦 11. Trojan C - IPv4 : 443",
+                "💦 12. Trojan - Domain : 8443",
+                "💦 13. Trojan - IPv4 : 8443",
+                "💦 14. Trojan - IPv4 : 8443",
+                "💦 15. Trojan C - Domain : 8443",
+                "💦 16. Trojan C - IPv4 : 8443",
+                "💦 17. Trojan C - IPv4 : 8443",
+                "💦 18. Trojan C - IPv4 : 8443",
+                "💦 19. Trojan C - IPv4 : 8443",
+                "💦 20. Trojan C - IPv4 : 8443",
+                "💦 21. Trojan C - IPv4 : 8443",
+                "💦 22. Trojan C - IPv4 : 8443",
+                "💦 1. 🔗 Trojan - Domain : 443",
+                "💦 2. 🔗 Trojan - IPv4 : 443",
+                "💦 3. 🔗 Trojan - IPv4 : 443",
+                "💦 4. 🔗 Trojan C - Domain : 443",
+                "💦 5. 🔗 Trojan C - IPv4 : 443",
+                "💦 6. 🔗 Trojan C - IPv4 : 443",
+                "💦 7. 🔗 Trojan C - IPv4 : 443",
+                "💦 8. 🔗 Trojan C - IPv4 : 443",
+                "💦 9. 🔗 Trojan C - IPv4 : 443",
+                "💦 10. 🔗 Trojan C - IPv4 : 443",
+                "💦 11. 🔗 Trojan C - IPv4 : 443",
+                "💦 12. 🔗 Trojan - Domain : 8443",
+                "💦 13. 🔗 Trojan - IPv4 : 8443",
+                "💦 14. 🔗 Trojan - IPv4 : 8443",
+                "💦 15. 🔗 Trojan C - Domain : 8443",
+                "💦 16. 🔗 Trojan C - IPv4 : 8443",
+                "💦 17. 🔗 Trojan C - IPv4 : 8443",
+                "💦 18. 🔗 Trojan C - IPv4 : 8443",
+                "💦 19. 🔗 Trojan C - IPv4 : 8443",
+                "💦 20. 🔗 Trojan C - IPv4 : 8443",
+                "💦 21. 🔗 Trojan C - IPv4 : 8443",
+                "💦 22. 🔗 Trojan C - IPv4 : 8443"
+            ],
+            "interrupt_exist_connections": false
+        }
+    ]
+}
