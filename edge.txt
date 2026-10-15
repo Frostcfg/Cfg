@@ -1,0 +1,9 @@
+trojan://f45b741e-5942-4ac2-8873-4516aa4ba5cb@185.82.126.184:2053/?type=grpc&serviceName=%252F&security=tls&sni=mlmalx.us.ci&alpn=h2%2Chttp%2F1.1#%D0%9B%D0%B0%D1%82%D0%B2%D0%B8%D1%8F
+trojan://f45b741e-5942-4ac2-8873-4516aa4ba5cb@103.102.228.113:443/?type=grpc&serviceName=%252F&security=tls&sni=mlmalx.us.ci&alpn=h2%2Chttp%2F1.1#%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%8B-1
+trojan://f45b741e-5942-4ac2-8873-4516aa4ba5cb@103.251.165.195:8443/?type=grpc&serviceName=%252F&security=tls&sni=mlmalx.us.ci&alpn=h2%2Chttp%2F1.1#%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%8B-2
+trojan://f45b741e-5942-4ac2-8873-4516aa4ba5cb@145.239.88.255:8443/?type=grpc&serviceName=%252F&security=tls&sni=mlmalx.us.ci&alpn=h2%2Chttp%2F1.1#%D0%9F%D0%BE%D0%BB%D1%8C%D1%88%D0%B0-1
+trojan://f45b741e-5942-4ac2-8873-4516aa4ba5cb@145.239.88.255:2053/?type=grpc&serviceName=%252F&security=tls&sni=mlmalx.us.ci&alpn=h2%2Chttp%2F1.1#%D0%9F%D0%BE%D0%BB%D1%8C%D1%88%D0%B0-2
+trojan://f45b741e-5942-4ac2-8873-4516aa4ba5cb@103.228.171.5:2053/?type=grpc&serviceName=%252F&security=tls&sni=mlmalx.us.ci&alpn=h2%2Chttp%2F1.1#%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D1%8F-1
+trojan://f45b741e-5942-4ac2-8873-4516aa4ba5cb@103.228.171.5:8443/?type=grpc&serviceName=%252F&security=tls&sni=mlmalx.us.ci&alpn=h2%2Chttp%2F1.1#%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D1%8F-2
+trojan://f45b741e-5942-4ac2-8873-4516aa4ba5cb@109.120.134.216:443/?type=grpc&serviceName=%252F&security=tls&sni=mlmalx.us.ci&alpn=h2%2Chttp%2F1.1#%D0%A8%D0%B2%D0%B5%D1%86%D0%B8%D1%8F
+trojan://f45b741e-5942-4ac2-8873-4516aa4ba5cb@mlmalx.us.ci:443/?type=grpc&serviceName=%252F&security=tls&sni=mlmalx.us.ci&alpn=h2%2Chttp%2F1.1#%F0%9F%87%A9%F0%9F%87%AA%20DE
